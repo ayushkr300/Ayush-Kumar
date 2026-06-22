@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayush Kumar — AI · ERP · Industrial Automation Engineer</title>
+  <meta name="description"
+    content="Ayush Kumar builds AI-powered ERP systems, industrial automation platforms, and cloud infrastructure for organizations that need to scale." />
+  <meta property="og:title" content="Ayush Kumar — AI + ERP + Industrial Automation" />
+  <meta property="og:description" content="Building AI-Powered ERP & Industrial Software Systems" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+  <div id="progress-bar"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Ayush<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#impact">Work</a></li>
+        <li><a href="#cases">Projects</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="cmd-btn" id="open-cmd"><i class="fa fa-search"></i> Search <kbd>⌘K</kbd></button>
+        <button class="theme-btn" id="theme-toggle" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#impact" onclick="closeMobileNav()">Work</a>
+    <a href="#cases" onclick="closeMobileNav()">Projects</a>
+    <a href="#stack" onclick="closeMobileNav()">Stack</a>
+    <a href="#ai" onclick="closeMobileNav()">AI</a>
+    <a href="#timeline" onclick="closeMobileNav()">Journey</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Available for freelance & consulting</span>
+        </div>
+        <h1>Building <em>AI-Powered ERP</em> & Industrial Software Systems</h1>
+        <p class="hero-sub">I help organizations build ERPNext solutions, AI assistants, cloud infrastructure, and
+          industrial automation platforms that scale — from factory floor to cloud.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary" onclick="downloadResume()"><i class="fa fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn-outline"><i class="fa fa-calendar"></i> Schedule a Call</a>
+          <a href="#cases" class="btn-outline"><i class="fa fa-folder-open"></i> View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-num"><span class="count" data-target="12">0</span><span>+</span></div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num"><span class="count" data-target="8">0</span><span>+</span></div>
+            <div class="stat-label">ERP Customisations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num"><span class="count" data-target="5">0</span><span>+</span></div>
+            <div class="stat-label">AI Integrations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num"><span class="count" data-target="2">0</span><span>+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+      <!-- Terminal -->
+      <div class="hero-terminal fade-in-r">
+        <div class="terminal-bar">
+          <div class="t-dot"></div>
+          <div class="t-dot"></div>
+          <div class="t-dot"></div>
+          <span class="terminal-title">ayush@portfolio ~ </span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div><span class="t-prompt">❯ </span><span class="t-cmd">whoami</span></div>
+          <div class="t-out">Ayush Kumar — AI + ERP + Automation Engineer</div>
+          <br>
+          <div><span class="t-prompt">❯ </span><span class="t-cmd">cat stack.json</span></div>
+          <div class="t-out v">ERPNext / Frappe Framework</div>
+          <div class="t-out v">OpenAI · Gemini · MCP Agents</div>
+          <div class="t-out a">AWS · Docker · Lambda · S3</div>
+          <div class="t-out a">Python · Node.js · React · Laravel</div>
+          <div class="t-out e">MySQL · PostgreSQL · Redis</div>
+          <div class="t-out e">Industrial IoT · KUKA · Telemetry</div>
+          <br>
+          <div><span class="t-prompt">❯ </span><span class="t-cmd">./get-in-touch.sh</span></div>
+          <div class="t-out">Opening contact form...</div>
+          <div><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <p class="trust-label">Technologies I work with daily</p>
+    <div style="overflow:hidden;position:relative">
+      <div class="trust-track" id="trust-track">
+        <div class="tech-pill"><i class="fa fa-leaf" style="color:#00DC82"></i> ERPNext</div>
+        <div class="tech-pill"><i class="fa fa-cloud" style="color:#FF9900"></i> AWS</div>
+        <div class="tech-pill"><i class="fab fa-docker" style="color:#2496ED"></i> Docker</div>
+        <div class="tech-pill"><i class="fab fa-python" style="color:#3776AB"></i> Python</div>
+        <div class="tech-pill"><i class="fab fa-react" style="color:#61DAFB"></i> React</div>
+        <div class="tech-pill"><i class="fa fa-database" style="color:#4479A1"></i> MySQL</div>
+        <div class="tech-pill"><i class="fa fa-robot" style="color:#10A37F"></i> OpenAI</div>
+        <div class="tech-pill"><i class="fab fa-node-js" style="color:#339933"></i> Node.js</div>
+        <div class="tech-pill"><i class="fa fa-elephant" style="color:#336791"></i> PostgreSQL</div>
+        <div class="tech-pill"><i class="fa fa-code" style="color:#FF2D20"></i> Laravel</div>
+        <div class="tech-pill"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</div>
+        <div class="tech-pill"><i class="fa fa-microchip" style="color:#F59E0B"></i> IoT</div>
+        <!-- duplicate for seamless loop -->
+        <div class="tech-pill"><i class="fa fa-leaf" style="color:#00DC82"></i> ERPNext</div>
+        <div class="tech-pill"><i class="fa fa-cloud" style="color:#FF9900"></i> AWS</div>
+        <div class="tech-pill"><i class="fab fa-docker" style="color:#2496ED"></i> Docker</div>
+        <div class="tech-pill"><i class="fab fa-python" style="color:#3776AB"></i> Python</div>
+        <div class="tech-pill"><i class="fab fa-react" style="color:#61DAFB"></i> React</div>
+        <div class="tech-pill"><i class="fa fa-database" style="color:#4479A1"></i> MySQL</div>
+        <div class="tech-pill"><i class="fa fa-robot" style="color:#10A37F"></i> OpenAI</div>
+        <div class="tech-pill"><i class="fab fa-node-js" style="color:#339933"></i> Node.js</div>
+        <div class="tech-pill"><i class="fa fa-elephant" style="color:#336791"></i> PostgreSQL</div>
+        <div class="tech-pill"><i class="fa fa-code" style="color:#FF2D20"></i> Laravel</div>
+        <div class="tech-pill"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</div>
+        <div class="tech-pill"><i class="fa fa-microchip" style="color:#F59E0B"></i> IoT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACT -->
+  <section class="impact" id="impact">
+    <div class="container">
+      <span class="section-eye">Selected Work</span>
+      <h2 class="section-title fade-in">What I've Built</h2>
+      <p class="section-sub fade-in">Real systems deployed in production. Each project solves a specific business
+        problem with measurable outcomes.</p>
+      <div class="impact-grid">
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-v"><i class="fa fa-industry"></i></div>
+          <h4>Welding Data Management Platform</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">Manual logging of KUKA robot welding data caused delays and quality blind spots on
+              the factory floor.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Built a full-stack platform to collect, store, and visualise welding telemetry in
+              real time with automated reporting.</div>
+          </div>
+          <span class="impact-metric">↑ 40% faster quality review</span>
+        </div>
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-a"><i class="fa fa-robot"></i></div>
+          <h4>AI Assistant for ERPNext</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">ERP users struggled to query business data without knowing Frappe's document model
+              or writing reports.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Integrated an AI assistant with MCP tool-calling that lets users ask
+              natural-language questions and get live ERP data back.</div>
+          </div>
+          <span class="impact-metric">↓ 60% report generation time</span>
+        </div>
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-e"><i class="fa fa-chart-line"></i></div>
+          <h4>Real-Time Telemetry Dashboard</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">Production managers had no live visibility into machine uptime, cycle counts, or
+              weld quality across shifts.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Built an industrial dashboard with live data feeds, anomaly alerts, and
+              shift-summary exports using AWS Lambda and S3.</div>
+          </div>
+          <span class="impact-metric">Real-time monitoring across 3 shifts</span>
+        </div>
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-v"><i class="fa fa-users"></i></div>
+          <h4>Employee Assessment Portal</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">HR assessments were paper-based, inconsistent, and impossible to track or aggregate
+              for reviews.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Developed a custom ERPNext portal with dynamic forms, scoring logic, and manager
+              dashboards for performance tracking.</div>
+          </div>
+          <span class="impact-metric">100% paperless assessment flow</span>
+        </div>
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-a"><i class="fa fa-cogs"></i></div>
+          <h4>Manufacturing Workflow Automation</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">Manual hand-offs between production, QA, and dispatch created bottlenecks and data
+              entry errors.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Built ERPNext workflow automations with custom scripts, email triggers, and
+              role-based approval chains.</div>
+          </div>
+          <span class="impact-metric">↓ 3 hrs/day manual overhead</span>
+        </div>
+        <div class="impact-card fade-in">
+          <div class="impact-icon ic-e"><i class="fa fa-plug"></i></div>
+          <h4>MCP Server & Agent Integrations</h4>
+          <div class="impact-row">
+            <div class="impact-label">Problem</div>
+            <div class="impact-val">AI models couldn't access live business context without brittle custom APIs for
+              every data source.</div>
+          </div>
+          <div class="impact-row">
+            <div class="impact-label">Solution</div>
+            <div class="impact-val">Built MCP servers exposing ERPNext and IoT data to AI agents with typed tools, auth,
+              and streaming responses.</div>
+          </div>
+          <span class="impact-metric">Unified AI context layer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <span class="section-eye">Deep Dives</span>
+      <h2 class="section-title fade-in">Case Studies</h2>
+      <p class="section-sub fade-in">Architecture decisions, technology choices, and measured results from key projects.
+      </p>
+      <div class="case-tabs fade-in">
+        <button class="tab-btn active" data-tab="welddb">WeldDB Platform</button>
+        <button class="tab-btn" data-tab="aiasst">AI ERP Assistant</button>
+        <button class="tab-btn" data-tab="dashboard">Telemetry Dashboard</button>
+        <!-- <button class="tab-btn" data-tab="assessment">Assessment Portal</button> -->
+        <button class="tab-btn" data-tab="erpcust">ERP Customisations</button>
+      </div>
+
+      <!-- WeldDB -->
+      <div class="case-panel active" id="tab-welddb">
+        <div class="case-content">
+          <span class="case-tag">Industrial · IoT · Full Stack</span>
+          <h3>WeldDB — Welding Data Management Platform</h3>
+          <div class="case-section-label">Challenge</div>
+          <p class="case-text">Keepsake Automation's KUKA welding robots produced rich operational data — weld times,
+            arc voltage, wire feed speed — but it was trapped in proprietary machine logs. QA reviews took hours;
+            tracing defects to specific weld parameters was manual and error-prone.</p>
+          <div class="case-section-label">Architecture</div>
+          <p class="case-text">Built a pipeline that reads machine exports via FTP → Lambda ingestion → S3 raw storage →
+            MySQL normalised store → React dashboard with live WebSocket updates. AWS CloudWatch handles alerting on
+            anomalous readings.</p>
+          <div class="case-section-label">Technologies</div>
+          <div class="case-techs">
+            <span class="tech-tag">Python</span><span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">AWS S3</span><span class="tech-tag">MySQL</span>
+            <span class="tech-tag">React</span><span class="tech-tag">CloudWatch</span>
+            <span class="tech-tag">Docker</span><span class="tech-tag">Node.js</span>
+          </div>
+          <div class="case-section-label">Results</div>
+          <div class="case-results">
+            <div class="result-row">40% reduction in QA review time</div>
+            <div class="result-row">100% automated data capture — zero manual entry</div>
+            <div class="result-row">Defect traceability from weld event to robot parameter</div>
+            <div class="result-row">Real-time alerts for out-of-spec readings</div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <div class="case-mock-header">
+            <div class="mock-dot" style="background:#FF5F57"></div>
+            <div class="mock-dot" style="background:#FFBD2E"></div>
+            <div class="mock-dot" style="background:#28CA41"></div>
+            <div class="mock-bar"></div>
+          </div>
+          <div class="case-metric-row">
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--emerald)">99.2%</div>
+              <div class="case-metric-label">Uptime</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--amber)">1.2s</div>
+              <div class="case-metric-label">Avg Latency</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--violet-l)">8K+</div>
+              <div class="case-metric-label">Welds / Day</div>
+            </div>
+          </div>
+          <div class="mock-chart">
+            <div class="bar" style="height:45%;background:var(--violet)"></div>
+            <div class="bar" style="height:60%;background:var(--violet)"></div>
+            <div class="bar" style="height:55%;background:var(--violet)"></div>
+            <div class="bar" style="height:80%;background:var(--amber)"></div>
+            <div class="bar" style="height:70%;background:var(--violet)"></div>
+            <div class="bar" style="height:90%;background:var(--emerald)"></div>
+            <div class="bar" style="height:75%;background:var(--violet)"></div>
+            <div class="bar" style="height:65%;background:var(--violet)"></div>
+            <div class="bar" style="height:85%;background:var(--emerald)"></div>
+            <div class="bar" style="height:70%;background:var(--violet)"></div>
+            <div class="bar" style="height:60%;background:var(--amber)"></div>
+            <div class="bar" style="height:50%;background:var(--violet)"></div>
+          </div>
+          <div style="margin-top:1rem;font-family:var(--mono);font-size:.7rem;color:var(--muted)">Arc voltage readings —
+            last 12 hours</div>
+        </div>
+      </div>
+
+      <!-- AI Assistant -->
+      <div class="case-panel" id="tab-aiasst">
+        <div class="case-content">
+          <span class="case-tag">AI · ERPNext · MCP</span>
+          <h3>AI Assistant for ERPNext with MCP Integration</h3>
+          <div class="case-section-label">Challenge</div>
+          <p class="case-text">Non-technical ERP users needed live business data — sales figures, stock levels, pending
+            tasks — but couldn't write Frappe filters or navigate document trees. Creating new reports required
+            developer time every time.</p>
+          <div class="case-section-label">Architecture</div>
+          <p class="case-text">Built an MCP server exposing ERPNext as typed tools (get_doc, run_report, create_doc).
+            Integrated with OpenAI via tool-calling so the AI can fetch live data, perform actions, and respond
+            conversationally. Deployed behind Frappe's auth layer.</p>
+          <div class="case-section-label">Technologies</div>
+          <div class="case-techs">
+            <span class="tech-tag">Python</span><span class="tech-tag">ERPNext</span>
+            <span class="tech-tag">Frappe</span><span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">MCP Protocol</span><span class="tech-tag">Node.js</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="case-section-label">Results</div>
+          <div class="case-results">
+            <div class="result-row">60% reduction in report generation time</div>
+            <div class="result-row">Non-technical staff can now self-serve data queries</div>
+            <div class="result-row">AI can create and update ERP records via natural language</div>
+            <div class="result-row">Secure — respects Frappe's role-based permissions</div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <div class="case-mock-header">
+            <div class="mock-dot" style="background:#FF5F57"></div>
+            <div class="mock-dot" style="background:#FFBD2E"></div>
+            <div class="mock-dot" style="background:#28CA41"></div>
+            <div class="mock-bar"></div>
+          </div>
+          <div style="font-family:var(--mono);font-size:.78rem;line-height:2">
+            <div style="color:var(--muted)">User:</div>
+            <div
+              style="color:var(--heading);background:rgba(124,58,237,0.08);padding:.5rem .75rem;border-radius:8px;margin:.25rem 0;border:1px solid rgba(124,58,237,0.15)">
+              "Show me all open purchase orders this month"</div>
+            <div style="color:var(--muted);margin-top:.5rem">AI → MCP Tool Call:</div>
+            <div
+              style="color:var(--emerald);padding:.5rem .75rem;border-radius:8px;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.15);margin:.25rem 0">
+              run_report("Purchase Order", filters={month: "June"})</div>
+            <div style="color:var(--muted);margin-top:.5rem">Response:</div>
+            <div
+              style="color:var(--text);padding:.5rem .75rem;border-radius:8px;background:var(--surface);border:1px solid var(--border);margin:.25rem 0">
+              Found 14 open POs totalling ₹4.2L. Top supplier: Tata Steel (3 orders). 2 overdue by &gt;7 days.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="case-panel" id="tab-dashboard">
+        <div class="case-content">
+          <span class="case-tag">IoT · Cloud · React</span>
+          <h3>Real-Time Welding Analytics Dashboard</h3>
+          <div class="case-section-label">Challenge</div>
+          <p class="case-text">Production managers had no centralised view of shop floor activity. Shift handovers
+            relied on verbal briefings; there was no historical trend data to spot process degradation over time.</p>
+          <div class="case-section-label">Architecture</div>
+          <p class="case-text">Lambda ingestion functions publish to an SNS topic. S3 stores raw & aggregated
+            time-series. A React dashboard polls a lightweight REST API (Node/Express on EC2) and renders live charts.
+            CloudWatch dashboards feed the alerting layer.</p>
+          <div class="case-section-label">Technologies</div>
+          <div class="case-techs">
+            <span class="tech-tag">React</span><span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">SNS</span><span class="tech-tag">S3</span>
+            <span class="tech-tag">CloudWatch</span><span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Recharts</span>
+          </div>
+          <div class="case-section-label">Results</div>
+          <div class="case-results">
+            <div class="result-row">Live visibility across all 3 production shifts</div>
+            <div class="result-row">Automated shift-end reports emailed to management</div>
+            <div class="result-row">Anomaly detection reduced incident response time by 50%</div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <div class="case-mock-header">
+            <div class="mock-dot" style="background:#FF5F57"></div>
+            <div class="mock-dot" style="background:#FFBD2E"></div>
+            <div class="mock-dot" style="background:#28CA41"></div>
+            <div class="mock-bar"></div>
+          </div>
+          <div class="dash-metrics">
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--amber)">247</div>
+              <div class="case-metric-label">Welds/hr</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--emerald)">98.4%</div>
+              <div class="case-metric-label">Pass Rate</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--violet-l)">3</div>
+              <div class="case-metric-label">Robots Live</div>
+            </div>
+          </div>
+          <div class="mock-chart">
+            <div class="bar" style="height:65%;background:var(--emerald)"></div>
+            <div class="bar" style="height:80%;background:var(--emerald)"></div>
+            <div class="bar" style="height:55%;background:var(--amber)"></div>
+            <div class="bar" style="height:90%;background:var(--emerald)"></div>
+            <div class="bar" style="height:75%;background:var(--emerald)"></div>
+            <div class="bar" style="height:60%;background:var(--emerald)"></div>
+            <div class="bar" style="height:95%;background:var(--emerald)"></div>
+            <div class="bar" style="height:70%;background:var(--emerald)"></div>
+          </div>
+          <div style="margin-top:1rem;font-family:var(--mono);font-size:.7rem;color:var(--muted)">Pass/fail rate —
+            8-hour shift</div>
+        </div>
+      </div>
+
+      <!-- Assessment -->
+      <!-- <div class="case-panel" id="tab-assessment">
+    <div class="case-content">
+      <span class="case-tag">ERPNext · Portal · HR</span>
+      <h3>Employee Assessment Portal</h3>
+      <div class="case-section-label">Challenge</div>
+      <p class="case-text">HR ran assessments on paper forms. Scores were manually entered into spreadsheets — slow, error-prone, and impossible to track longitudinally across quarters.</p>
+      <div class="case-section-label">Architecture</div>
+      <p class="case-text">Custom ERPNext application with a new DocType for assessment templates, configurable scoring criteria, and a web portal for employees to self-assess. Manager dashboards aggregate scores with historical trend charts. Role-based access enforced via Frappe permissions.</p>
+      <div class="case-section-label">Technologies</div>
+      <div class="case-techs">
+        <span class="tech-tag">ERPNext</span><span class="tech-tag">Frappe</span>
+        <span class="tech-tag">Python</span><span class="tech-tag">Jinja</span>
+        <span class="tech-tag">MariaDB</span><span class="tech-tag">JavaScript</span>
+      </div>
+      <div class="case-section-label">Results</div>
+      <div class="case-results">
+        <div class="result-row">Fully paperless — 100% digital assessment flow</div>
+        <div class="result-row">3× faster review cycle per employee</div>
+        <div class="result-row">Longitudinal performance data now available for HR analytics</div>
+      </div>
+    </div>
+    <div class="case-visual">
+      <div class="case-mock-header">
+        <div class="mock-dot" style="background:#FF5F57"></div>
+        <div class="mock-dot" style="background:#FFBD2E"></div>
+        <div class="mock-dot" style="background:#28CA41"></div>
+        <div class="mock-bar"></div>
+      </div>
+      <div style="font-family:var(--mono);font-size:.78rem">
+        <div style="color:var(--muted);margin-bottom:.5rem">Assessment Scores — Q2 2025</div>
+        <div style="display:flex;flex-direction:column;gap:.5rem">
+          <div style="display:flex;align-items:center;gap:.75rem"><span style="width:80px;color:var(--text);font-size:.75rem">Technical</span><div style="flex:1;height:6px;border-radius:3px;background:var(--border)"><div style="width:88%;height:100%;border-radius:3px;background:var(--emerald)"></div></div><span style="color:var(--emerald)">88%</span></div>
+          <div style="display:flex;align-items:center;gap:.75rem"><span style="width:80px;color:var(--text);font-size:.75rem">Leadership</span><div style="flex:1;height:6px;border-radius:3px;background:var(--border)"><div style="width:75%;height:100%;border-radius:3px;background:var(--violet-l)"></div></div><span style="color:var(--violet-l)">75%</span></div>
+          <div style="display:flex;align-items:center;gap:.75rem"><span style="width:80px;color:var(--text);font-size:.75rem">Initiative</span><div style="flex:1;height:6px;border-radius:3px;background:var(--border)"><div style="width:92%;height:100%;border-radius:3px;background:var(--amber)"></div></div><span style="color:var(--amber)">92%</span></div>
+          <div style="display:flex;align-items:center;gap:.75rem"><span style="width:80px;color:var(--text);font-size:.75rem">Teamwork</span><div style="flex:1;height:6px;border-radius:3px;background:var(--border)"><div style="width:83%;height:100%;border-radius:3px;background:var(--emerald)"></div></div><span style="color:var(--emerald)">83%</span></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+      <!-- ERP Customisations -->
+      <div class="case-panel" id="tab-erpcust">
+        <div class="case-content">
+          <span class="case-tag">ERPNext · Frappe · Full Stack</span>
+          <h3>ERPNext Custom Modules & Automations</h3>
+          <div class="case-section-label">Challenge</div>
+          <p class="case-text">Off-the-shelf ERPNext didn't match the client's manufacturing workflows — custom approval
+            chains, industry-specific document formats, and bespoke reporting were all needed before go-live.</p>
+          <div class="case-section-label">Architecture</div>
+          <p class="case-text">Developed custom Frappe apps with new DocTypes, server scripts, and client scripts. Built
+            workflow states with email/SMS notifications at each transition. Custom print formats using Jinja.
+            Role-based dashboards for different departments.</p>
+          <div class="case-section-label">Technologies</div>
+          <div class="case-techs">
+            <span class="tech-tag">ERPNext</span><span class="tech-tag">Frappe Framework</span>
+            <span class="tech-tag">Python</span><span class="tech-tag">Jinja2</span>
+            <span class="tech-tag">JavaScript</span><span class="tech-tag">MariaDB</span>
+          </div>
+          <div class="case-section-label">Results</div>
+          <div class="case-results">
+            <div class="result-row">8+ custom modules deployed to production</div>
+            <div class="result-row">Automated approval workflows across 4 departments</div>
+            <div class="result-row">Custom print formats matching industry compliance requirements</div>
+            <div class="result-row">Zero custom-core modifications — fully upgrade-safe</div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <div class="case-mock-header">
+            <div class="mock-dot" style="background:#FF5F57"></div>
+            <div class="mock-dot" style="background:#FFBD2E"></div>
+            <div class="mock-dot" style="background:#28CA41"></div>
+            <div class="mock-bar"></div>
+          </div>
+          <div style="font-family:var(--mono);font-size:.75rem;line-height:1.8">
+            <div style="color:var(--muted)">Workflow: Purchase Approval</div>
+            <div style="margin-top:.75rem;display:flex;flex-direction:column;gap:.5rem">
+              <div style="display:flex;align-items:center;gap:.5rem">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald)"></div><span
+                  style="color:var(--heading)">Draft</span><span style="color:var(--muted)">→ submitted by
+                  requestor</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--amber)"></div><span
+                  style="color:var(--heading)">Pending Review</span><span style="color:var(--muted)">→ manager
+                  notified</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--violet-l)"></div><span
+                  style="color:var(--heading)">Finance Check</span><span style="color:var(--muted)">→ budget
+                  validated</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald)"></div><span
+                  style="color:var(--heading)">Approved</span><span style="color:var(--muted)">→ PO auto-created</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <span class="section-eye">Capabilities</span>
+      <h2 class="section-title fade-in">Tech Stack</h2>
+      <p class="section-sub fade-in">Skills organised by domain — each one battle-tested in production systems.</p>
+      <div class="stack-grid">
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(124,58,237,0.1)"><i class="fa fa-leaf"
+                style="color:var(--violet-l)"></i></div>
+            <div class="stack-cat">ERP / Frappe</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">ERPNext</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="90"></div>
+              </div><span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Frappe</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="88"></div>
+              </div><span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Custom Apps</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="85"></div>
+              </div><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Workflows</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="82"></div>
+              </div><span class="skill-pct">82%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(245,158,11,0.1)"><i class="fa fa-robot"
+                style="color:var(--amber)"></i></div>
+            <div class="stack-cat">AI / ML</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">OpenAI API</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="85"></div>
+              </div><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">MCP Protocol</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="80"></div>
+              </div><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">RAG Systems</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="75"></div>
+              </div><span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Prompt Eng.</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="82"></div>
+              </div><span class="skill-pct">82%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(16,185,129,0.1)"><i class="fa fa-cloud"
+                style="color:var(--emerald)"></i></div>
+            <div class="stack-cat">Cloud / DevOps</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">AWS</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="78"></div>
+              </div><span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Docker</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="75"></div>
+              </div><span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Lambda</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="80"></div>
+              </div><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">CloudWatch</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="72"></div>
+              </div><span class="skill-pct">72%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(124,58,237,0.1)"><i class="fab fa-python"
+                style="color:var(--violet-l)"></i></div>
+            <div class="stack-cat">Backend</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">Python</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="88"></div>
+              </div><span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Node.js</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="78"></div>
+              </div><span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Laravel</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="72"></div>
+              </div><span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">REST APIs</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="85"></div>
+              </div><span class="skill-pct">85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(245,158,11,0.1)"><i class="fab fa-react"
+                style="color:var(--amber)"></i></div>
+            <div class="stack-cat">Frontend</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">React</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="78"></div>
+              </div><span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">JavaScript</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="82"></div>
+              </div><span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">HTML/CSS</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="85"></div>
+              </div><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Jinja</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="80"></div>
+              </div><span class="skill-pct">80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-head">
+            <div class="stack-icon" style="background:rgba(16,185,129,0.1)"><i class="fa fa-database"
+                style="color:var(--emerald)"></i></div>
+            <div class="stack-cat">Databases</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-row"><span class="skill-name">MySQL</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="85"></div>
+              </div><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">MariaDB</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="82"></div>
+              </div><span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="70"></div>
+              </div><span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-row"><span class="skill-name">Redis</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="65"></div>
+              </div><span class="skill-pct">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI SECTION -->
+  <section class="ai-section" id="ai">
+    <div class="container">
+      <span class="section-eye">AI Engineering</span>
+      <h2 class="section-title fade-in">Building with <em
+          style="font-style:normal;background:linear-gradient(135deg,var(--violet),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AI</em>
+      </h2>
+      <p class="section-sub fade-in">I don't just use AI tools — I build the layer that connects them to real business
+        systems.</p>
+      <div class="ai-grid">
+        <div class="fade-in-l">
+          <p style="color:var(--text);line-height:1.8;margin-bottom:1.5rem">My focus is on <strong
+              style="color:var(--heading)">agentic AI systems</strong> — architectures where language models use tools,
+            take actions, and operate within business contexts. This means building MCP servers, designing tool schemas,
+            orchestrating multi-step agent workflows, and integrating AI into production ERP and IoT platforms.</p>
+          <p style="color:var(--text);line-height:1.8;margin-bottom:1.5rem">I've shipped AI features that are <strong
+              style="color:var(--heading)">actually used</strong> — not demo prototypes. The AI ERP Assistant handles
+            live queries from real users every day, respects permissions, and operates on production data.</p>
+          <div class="ai-chips">
+            <div class="ai-chip"><i class="fa fa-plug"></i> MCP Protocol</div>
+            <div class="ai-chip"><i class="fa fa-robot"></i> AI Agents</div>
+            <div class="ai-chip"><i class="fa fa-brain"></i> OpenAI / Gemini</div>
+            <div class="ai-chip"><i class="fa fa-search"></i> RAG Systems</div>
+            <div class="ai-chip"><i class="fa fa-pencil"></i> Prompt Engineering</div>
+            <div class="ai-chip"><i class="fa fa-wrench"></i> Tool Calling</div>
+            <div class="ai-chip"><i class="fa fa-sitemap"></i> Agent Orchestration</div>
+            <div class="ai-chip"><i class="fa fa-link"></i> ERP AI Integration</div>
+          </div>
+        </div>
+        <div class="ai-visual fade-in-r">
+          <div class="ai-nodes">
+            <div style="font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-bottom:.5rem">Agent
+              Architecture</div>
+            <div class="node-row">
+              <div class="node-box active">User Query</div>
+              <div class="node-arrow"><i class="fa fa-arrow-right"></i></div>
+              <div class="node-box active">LLM (GPT-4o)</div>
+            </div>
+            <div class="node-row" style="justify-content:center">
+              <div style="width:2px;height:30px;background:var(--border);margin:0 auto"></div>
+            </div>
+            <div class="node-row">
+              <div class="node-box active-a">MCP Server</div>
+              <div class="node-arrow"><i class="fa fa-arrows-left-right"></i></div>
+              <div class="node-box active-a">Tool Router</div>
+            </div>
+            <div class="node-row" style="justify-content:center">
+              <div style="width:2px;height:30px;background:var(--border);margin:0 auto"></div>
+            </div>
+            <div class="node-row">
+              <div class="node-box active-e" style="font-size:.72rem">ERPNext API</div>
+              <div class="node-box active-e" style="font-size:.72rem">IoT Data</div>
+              <div class="node-box active-e" style="font-size:.72rem">Documents</div>
+            </div>
+            <div class="node-row" style="justify-content:center;margin-top:.5rem">
+              <div class="node-box active" style="text-align:center">Structured Response → User</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ERP SECTION -->
+  <section class="erp" id="erp">
+    <div class="container">
+      <span class="section-eye">ERP Expertise</span>
+      <h2 class="section-title fade-in">ERPNext / Frappe</h2>
+      <p class="section-sub fade-in">Deep expertise in the entire Frappe stack — from DocType design to portal
+        development and workflow automation.</p>
+      <div class="erp-features">
+        <div class="erp-feat fade-in">
+          <i class="fa fa-file-code"></i>
+          <h5>Custom Apps</h5>
+          <p>Full Frappe app development — bench setup, DocTypes, server scripts, client scripts.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-table"></i>
+          <h5>Custom DocTypes</h5>
+          <p>Bespoke document models that fit your workflows, with field-level validation and links.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-globe"></i>
+          <h5>Portal Development</h5>
+          <p>Customer and employee-facing web portals built on Frappe's web framework.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-exchange-alt"></i>
+          <h5>API Integration</h5>
+          <p>REST and webhook integrations connecting ERPNext to external systems and services.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-project-diagram"></i>
+          <h5>Workflow Automation</h5>
+          <p>Multi-step approval workflows with email/SMS notifications and conditional routing.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-shield-alt"></i>
+          <h5>Permission Systems</h5>
+          <p>Granular role-based access — field-level, document-level, and user-based permissions.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-print"></i>
+          <h5>Print Formats</h5>
+          <p>Jinja-based custom print formats for invoices, orders, and compliance documents.</p>
+        </div>
+        <div class="erp-feat fade-in">
+          <i class="fa fa-chart-bar"></i>
+          <h5>Reports & Dashboards</h5>
+          <p>Script reports, query reports, and executive dashboards with number cards and charts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIAL -->
+  <section class="industrial" id="industrial">
+    <div class="container">
+      <span class="section-eye">Industrial Automation</span>
+      <h2 class="section-title fade-in">Factory Floor to Cloud</h2>
+      <p class="section-sub fade-in">Building the bridge between physical manufacturing systems and modern software
+        infrastructure.</p>
+      <div class="iot-showcase">
+        <div class="iot-list fade-in-l">
+          <div class="iot-item"><i class="fa fa-industry"></i><span>KUKA Welding Robot Integration</span></div>
+          <div class="iot-item"><i class="fa fa-wave-square"></i><span>Telemetry Data Collection Pipelines</span></div>
+          <div class="iot-item"><i class="fa fa-chart-area"></i><span>Production Monitoring Dashboards</span></div>
+          <div class="iot-item"><i class="fa fa-bell"></i><span>Real-Time Anomaly Alerting</span></div>
+          <div class="iot-item"><i class="fa fa-cloud-upload-alt"></i><span>IoT → AWS Cloud Pipelines</span></div>
+          <div class="iot-item"><i class="fa fa-file-export"></i><span>Automated Shift Reports</span></div>
+          <div class="iot-item"><i class="fa fa-network-wired"></i><span>FTP/SFTP Data Transfer Systems</span></div>
+        </div>
+        <div class="iot-dashboard fade-in-r">
+          <div class="dash-header">
+            <span class="dash-title">PRODUCTION FLOOR — LIVE</span>
+            <span class="dash-status">ACTIVE</span>
+          </div>
+          <div class="dash-metrics">
+            <div class="dash-m">
+              <div class="dash-m-val">247</div>
+              <div class="dash-m-unit">welds/hr</div>
+              <div class="dash-m-label">Output Rate</div>
+            </div>
+            <div class="dash-m">
+              <div class="dash-m-val" style="color:var(--emerald)">24.2</div>
+              <div class="dash-m-unit">V avg</div>
+              <div class="dash-m-label">Arc Voltage</div>
+            </div>
+            <div class="dash-m">
+              <div class="dash-m-val" style="color:var(--violet-l)">98.4</div>
+              <div class="dash-m-unit">%</div>
+              <div class="dash-m-label">Pass Rate</div>
+            </div>
+          </div>
+          <div class="dash-chart-area">
+            <div class="dash-bar" style="height:70%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:80%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:60%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:90%;background:var(--emerald)"></div>
+            <div class="dash-bar" style="height:75%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:85%;background:var(--emerald)"></div>
+            <div class="dash-bar" style="height:65%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:95%;background:var(--emerald)"></div>
+            <div class="dash-bar" style="height:55%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:88%;background:var(--emerald)"></div>
+            <div class="dash-bar" style="height:78%;background:var(--amber)"></div>
+            <div class="dash-bar" style="height:82%;background:var(--emerald)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <span class="section-eye">Journey</span>
+      <h2 class="section-title fade-in">Professional Timeline</h2>
+      <div class="timeline fade-in">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2023</div>
+          <div class="tl-role">Internship — Software Development</div>
+          <div class="tl-company">Keepsake Automation</div>
+          <div class="tl-desc">Started with Laravel-based web applications and gained hands-on exposure to ERPNext and
+            Frappe Framework. Built first production module for internal use.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2024</div>
+          <div class="tl-role">Junior Software Developer</div>
+          <div class="tl-company">Keepsake Automation · Ahmedabad</div>
+          <div class="tl-desc">Created welding data management platform —
+            architecture, AWS setup, React frontend, and production deployment,Began AWS integration work with S3,
+            Lambda, and CloudWatch.
+            Then started the employee assessment portal and shipped the first wave of manufacturing workflow
+            automations.
+            Went deep on Frappe — complex workflow automation across four
+            departments, portal development. Simultaneously started exploring the MCP protocol and built the first
+            proof-of-concept AI assistant for ERPNext.
+            Leading the AI integration work. The MCP server is in production and used daily.
+            Currently expanding tool coverage to 120+ categories, hardening intent classification, and exploring RAG
+            for unstructured business documents. Also open to new roles in AI-integrated ERP or agentic AI systems.
+          </div>
+        </div>
+        <!-- <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2024 – 2025</div>
+          <div class="tl-role">ERPNext Developer & AI Systems</div>
+          <div class="tl-company">Keepsake Automation · Ahmedabad</div>
+          <div class="tl-desc">Expanded into deep ERPNext customisation — 8+ custom apps, workflow automation, employee
+            portals. Simultaneously explored MCP protocol and built the AI Assistant for ERPNext.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025 – Present</div>
+          <div class="tl-role">AI + Cloud + Industrial Automation</div>
+          <div class="tl-company">Keepsake Automation · Ahmedabad</div>
+          <div class="tl-desc">Leading AI integration initiatives — MCP servers, agentic workflows, RAG systems.
+            Maintaining cloud infrastructure on AWS. Actively consulting on ERPNext implementations and AI-powered ERP
+            solutions.</div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY HIRE -->
+  <section class="why" id="why">
+    <div class="container">
+      <span class="section-eye">Why Work With Me</span>
+      <h2 class="section-title fade-in">The Intersection Nobody Else Occupies</h2>
+      <p class="section-sub fade-in">Most developers do one thing well. I sit at the crossroads of four disciplines —
+        and that combination is rare.</p>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>ERP + AI — Together</h4>
+          <p>I don't bolt AI onto an ERP as an afterthought. I design the integration from first principles — tool
+            schemas, permission awareness, and production-grade reliability.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>Industrial Automation Experience</h4>
+          <p>I've worked directly with factory floor systems — robot data, telemetry pipelines, shift monitoring. I
+            understand the constraints of operational technology environments.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>Cloud-Native Mindset</h4>
+          <p>AWS isn't just a hosting layer to me — I design for Lambda, S3, SNS, and CloudWatch from the start, not as
+            a migration afterthought.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>Full Stack — Actually Full</h4>
+          <p>I own the entire stack: database schema, backend logic, API design, and frontend UX. No handoff delays, no
+            broken interfaces between layers.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>Production Deployments Only</h4>
+          <p>Every project in my portfolio is live and used by real people. No toy projects, no tutorial rewrites. Real
+            constraints, real scale, real results.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-check"><i class="fa fa-check"></i></div>
+          <h4>Business Process Understanding</h4>
+          <p>I've spent time inside manufacturing operations. I think in terms of workflows, approvals, and business
+            outcomes — not just code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <span class="section-eye">Get In Touch</span>
+      <h2 class="section-title fade-in">Let's Build Something</h2>
+      <p class="section-sub fade-in">Open to full-time roles, freelance projects, and consulting engagements.
+        Particularly interested in ERPNext, AI systems, and industrial automation work.</p>
+      <div class="contact-inner">
+        <div class="fade-in-l">
+          <p style="color:var(--text);line-height:1.8;margin-bottom:1.5rem">Whether you're a startup needing an ERP from
+            scratch, a manufacturer looking to add AI to your floor data, or a company wanting to build intelligent
+            workflows — I'd love to hear about it.</p>
+          <div class="contact-links">
+            <a href="mailto:ayush@example.com" class="contact-link"><i class="fa fa-envelope"></i>
+              kunalayush30@gmail.com</a>
+            <a href="https://linkedin.com/in/ayush-kumar-07669930b" target="_blank" class="contact-link"><i
+                class="fab fa-linkedin"></i>linkedin.com/in/ayush-kumar-07669930b</a>
+            <a href="https://github.com/ayushkr300" target="_blank" class="contact-link"><i class="fab fa-github"></i>
+              github.com/ayushkr300</a>
+            <a href="https://calendly.com/ayushkumar" target="_blank" class="contact-link"><i
+                class="fa fa-calendar-check"></i> Schedule a call on Calendly</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-in-r">
+          <div id="form-success" class="form-success">
+            <i class="fa fa-circle-check"></i>
+            Message sent! I'll get back to you within 24 hours.
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" placeholder="Your name" required />
+              <span class="form-error" id="err-name">Please enter your name.</span>
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" placeholder="you@company.com" required />
+              <span class="form-error" id="err-email">Please enter a valid email address.</span>
+            </div>
+            <div class="form-row">
+              <label for="cf-type">Enquiry Type</label>
+              <select id="cf-type">
+                <option value="">Select type...</option>
+                <option>Full-time role</option>
+                <option>Freelance project</option>
+                <option>ERPNext consulting</option>
+                <option>AI integration</option>
+                <option>Industrial automation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="err-msg">Please write a message.</span>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
+              <i class="fa fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Ayush<span>.</span></div>
+      <div class="footer-links">
+        <a href="#impact">Work</a>
+        <a href="#cases">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">© 2025 Ayush Kumar · Built with intent</div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-top" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+  <!-- COMMAND PALETTE -->
+  <div class="cmd-overlay" id="cmd-overlay">
+    <div class="cmd-box">
+      <div class="cmd-input-row">
+        <i class="fa fa-search"></i>
+        <input class="cmd-input" id="cmd-input" placeholder="Search sections, skills, projects..." autocomplete="off" />
+      </div>
+      <div class="cmd-results" id="cmd-results"></div>
+    </div>
+  </div>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init({
+        publicKey: "18uU9YrHdrW5VRbzX",
+      });
+    })();
+  </script>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
