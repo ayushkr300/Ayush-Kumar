@@ -336,11 +336,17 @@ if (contactForm) {
 
 /* ── RESUME DOWNLOAD ── */
 function downloadResume() {
-  const a = document.createElement("a");
-  a.href = "#";
-  a.download = "Ayush_Kumar 2.pdf";
-}
+  const link = document.createElement("a");
 
+  // Path to your PDF file
+  link.href = "./Ayush_Kumar 2.pdf";
+  // File name users will see when downloading
+  link.download = "Ayush_Kumar_Resume.pdf";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 /* ── TYPING ANIMATION in terminal (subtle re-run) ── */
 // Terminal is already pre-rendered for instant load; no JS needed
 
