@@ -1940,13 +1940,13 @@
   display: none;
   text-align: center;
   padding: 3rem 2rem;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 24px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(124, 58, 237, 0.06),
     rgba(16, 185, 129, 0.06)
-  );
+  ); */
   animation: successFade 0.8s ease forwards;
 }
 
