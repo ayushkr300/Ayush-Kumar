@@ -17,11 +17,11 @@ window.addEventListener("scroll", () => {
 const themeBtn = document.getElementById("theme-toggle");
 themeBtn.addEventListener("click", () => {
   const html = document.documentElement;
-  const isDark = html.getAttribute("data-theme") === "light";
-  html.setAttribute("data-theme", isDark ? "dark" : "light");
+  const isDark = html.getAttribute("data-theme") === "dark";
+  html.setAttribute("data-theme", isDark ? "light" : "dark");
   themeBtn.innerHTML = isDark
-    ? '<i class="fa fa-moon"></i>'
-    : '<i class="fa fa-sun"></i>';
+    ? '<i class="fa fa-sun"></i>'
+    : '<i class="fa fa-moon"></i>';
 });
 
 /* ── MOBILE NAV ── */
