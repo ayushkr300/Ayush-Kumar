@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,15 +12,48 @@
   <meta property="og:title" content="Ayush Kumar — AI + ERP + Industrial Automation" />
   <meta property="og:description" content="Building AI-Powered ERP & Industrial Software Systems" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ayushkumar.dev" />
+  <meta property="og:image" content="images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ayush Kumar — AI + ERP + Industrial Automation" />
+  <meta name="twitter:description" content="Building AI-Powered ERP & Industrial Software Systems" />
+  <meta name="twitter:image" content="images/logo.png" />
+  <link rel="canonical" href="https://ayushkumar.dev" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayush Kumar",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://ayushkumar.dev",
+    "sameAs": [
+      "https://github.com/ayushkr300",
+      "https://linkedin.com/in/ayush-kumar-07669930b"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/index.css" />
+  <noscript>
+    <style>
+      .fade-in,
+      .fade-in-l,
+      .fade-in-r {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
+  <a href="#home" class="skip-to-content">Skip to content</a>
 
   <div id="progress-bar"></div>
   <div id="cursor-glow"></div>
@@ -30,34 +63,41 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">Ayush<span>.</span></a>
       <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#impact">Work</a></li>
         <li><a href="#cases">Projects</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#ai">AI</a></li>
         <li><a href="#timeline">Journey</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
         <button class="cmd-btn" id="open-cmd"><i class="fa fa-search"></i> Search <kbd>⌘K</kbd></button>
-        <button class="theme-btn" id="theme-toggle" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <button class="theme-btn" id="theme-toggle" title="Toggle theme" aria-label="Toggle dark/light mode"><i
+            class="fa fa-moon"></i></button>
         <a href="#contact" class="nav-cta">Hire Me</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
 
   <!-- MOBILE NAV -->
   <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
     <a href="#impact" onclick="closeMobileNav()">Work</a>
     <a href="#cases" onclick="closeMobileNav()">Projects</a>
     <a href="#stack" onclick="closeMobileNav()">Stack</a>
     <a href="#ai" onclick="closeMobileNav()">AI</a>
     <a href="#timeline" onclick="closeMobileNav()">Journey</a>
+    <a href="#blog" onclick="closeMobileNav()">Blog</a>
     <a href="#contact" onclick="closeMobileNav()">Contact</a>
   </div>
 
   <!-- HERO -->
   <section class="hero" id="home">
+    <canvas id="hero-particles" class="hero-particles"></canvas>
     <div class="hero-bg">
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
@@ -65,8 +105,13 @@
     </div>
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span>Available for freelance & consulting</span>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <span>Available for freelance & consulting</span>
+          </div>
+          <div class="status-badge">
+            <i class="fa fa-hammer"></i> <span>Currently building: AI Chatbot for 120+ ERP Tools</span>
+          </div>
         </div>
         <h1>Building <em>AI-Powered ERP</em> & Industrial Software Systems</h1>
         <p class="hero-sub">I help organizations build ERPNext solutions, AI assistants, cloud infrastructure, and
@@ -78,20 +123,20 @@
         </div>
         <div class="hero-stats">
           <div class="stat-card">
-            <div class="stat-num"><span class="count" data-target="5">0</span><span>+</span></div>
-            <div class="stat-label">Projects Delivered</div>
+            <div class="stat-num"><span class="count" data-target="120">0</span><span>+</span></div>
+            <div class="stat-label">AI Tool Categories</div>
           </div>
           <div class="stat-card">
             <div class="stat-num"><span class="count" data-target="8">0</span><span>+</span></div>
-            <div class="stat-label">ERP Customisations</div>
+            <div class="stat-label">Custom ERP Modules</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num"><span class="count" data-target="2">0</span><span>+</span></div>
-            <div class="stat-label">AI Integrations</div>
+            <div class="stat-num"><span class="count" data-target="3">0</span></div>
+            <div class="stat-label">Production Platforms</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num"><span class="count" data-target="2">0</span><span>+</span></div>
-            <div class="stat-label">Years Experience</div>
+            <div class="stat-num"><span class="count" data-target="99">0</span><span>.2%</span></div>
+            <div class="stat-label">System Uptime</div>
           </div>
         </div>
       </div>
@@ -118,6 +163,34 @@
           <div><span class="t-prompt">❯ </span><span class="t-cmd">./get-in-touch.sh</span></div>
           <div class="t-out">Opening contact form...</div>
           <div><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="about" id="about">
+    <div class="container">
+      <span class="section-eye">About Me</span>
+      <h2 class="section-title fade-in">The Developer Behind the Code</h2>
+      <div class="about-grid fade-in">
+        <div class="about-image">
+          <img src="images/logo.png" alt="Ayush Kumar" />
+        </div>
+        <div class="about-content">
+          <p>Hi, I'm Ayush Kumar. I am a Full Stack Developer based in Ahmedabad, India. I specialize in bridging the
+            gap between business operations and modern software engineering.</p>
+          <p>My work primarily focuses on Agentic AI systems, ERPNext customizations, and Industrial Automation. I
+            believe in writing code that solves real-world problems—whether that's eliminating paper-based HR
+            assessments, extracting live telemetry from factory robots, or building an AI assistant that securely
+            queries production ERP databases.</p>
+          <p>Currently, I am working on expanding my AI chatbot's capabilities to over 120 tool categories for seamless
+            ERP interactions.</p>
+          <div class="about-details">
+            <div class="detail-item"><i class="fa fa-map-marker-alt"></i> Ahmedabad, India</div>
+            <div class="detail-item"><i class="fa fa-briefcase"></i> Open for Opportunities</div>
+            <div class="detail-item"><i class="fa fa-graduation-cap"></i> B.Tech Software Engineering</div>
+          </div>
         </div>
       </div>
     </div>
@@ -267,15 +340,79 @@
       <p class="section-sub fade-in">Architecture decisions, technology choices, and measured results from key projects.
       </p>
       <div class="case-tabs fade-in">
-        <button class="tab-btn active" data-tab="welddb">WeldDB Platform</button>
+        <button class="tab-btn active" data-tab="chatbot">ERPNext AI Chatbot</button>
+        <button class="tab-btn" data-tab="welddb">WeldDB Platform</button>
         <button class="tab-btn" data-tab="aiasst">AI ERP Assistant</button>
         <button class="tab-btn" data-tab="dashboard">Telemetry Dashboard</button>
         <!-- <button class="tab-btn" data-tab="assessment">Assessment Portal</button> -->
         <button class="tab-btn" data-tab="erpcust">ERP Customisations</button>
       </div>
 
+      <!-- AI Chatbot (NEW) -->
+      <div class="case-panel active" id="tab-chatbot">
+        <div class="case-content">
+          <span class="case-tag">AI · MCP · ERPNext · Full Stack</span>
+          <h3>ERPNext AI Chatbot (Live in Production)</h3>
+          <div class="case-section-label">Challenge</div>
+          <p class="case-text">Providing a seamless, conversational interface for ERP users to query complex business
+            data without needing technical expertise or navigating multiple Frappe document views.</p>
+          <div class="case-section-label">Architecture</div>
+          <p class="case-text">Built a production-grade AI Chatbot leveraging the Model Context Protocol (MCP). The user
+            interacts via a web UI, which routes queries to a backend MCP server. The server acts as a Tool Router,
+            securely translating LLM intents into ERPNext API calls (with over 120+ tool categories supported).</p>
+          <div class="case-section-label">Technologies</div>
+          <div class="case-techs">
+            <span class="tech-tag">Python</span><span class="tech-tag">MCP</span>
+            <span class="tech-tag">ERPNext</span><span class="tech-tag">OpenAI / Gemini</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="case-section-label">Results</div>
+          <div class="case-results">
+            <div class="result-row">Supports 120+ distinct tool actions securely</div>
+            <div class="result-row">Live in production with daily active business users</div>
+            <div class="result-row">Drastically reduced the need for custom report development</div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <div class="case-mock-header">
+            <div class="mock-dot" style="background:#FF5F57"></div>
+            <div class="mock-dot" style="background:#FFBD2E"></div>
+            <div class="mock-dot" style="background:#28CA41"></div>
+            <div class="mock-bar"></div>
+          </div>
+          <div class="case-metric-row">
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--violet-l)">120+</div>
+              <div class="case-metric-label">Tool Actions</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--emerald)">Live</div>
+              <div class="case-metric-label">Production</div>
+            </div>
+            <div class="case-metric">
+              <div class="case-metric-num" style="color:var(--amber)">MCP</div>
+              <div class="case-metric-label">Protocol</div>
+            </div>
+          </div>
+          <div style="font-family:var(--mono);font-size:.78rem;line-height:2">
+            <div style="color:var(--muted)">User:</div>
+            <div
+              style="color:var(--heading);background:rgba(124,58,237,0.08);padding:.5rem .75rem;border-radius:8px;margin:.25rem 0;border:1px solid rgba(124,58,237,0.15)">
+              "Show pending invoices above ₹1L this quarter"</div>
+            <div style="color:var(--muted);margin-top:.5rem">AI → MCP Tool Call:</div>
+            <div
+              style="color:var(--emerald);padding:.5rem .75rem;border-radius:8px;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.15);margin:.25rem 0">
+              get_list("Sales Invoice", filters={status:"Unpaid", grand_total:[">=",100000]})</div>
+            <div style="color:var(--muted);margin-top:.5rem">Response:</div>
+            <div
+              style="color:var(--text);padding:.5rem .75rem;border-radius:8px;background:var(--surface);border:1px solid var(--border);margin:.25rem 0">
+              Found 7 unpaid invoices totalling ₹12.4L. Oldest: INV-2025-0041 (34 days overdue).</div>
+          </div>
+        </div>
+      </div>
+
       <!-- WeldDB -->
-      <div class="case-panel active" id="tab-welddb">
+      <div class="case-panel" id="tab-welddb">
         <div class="case-content">
           <span class="case-tag">Industrial · IoT · Full Stack</span>
           <h3>WeldDB — Welding Data Management Platform</h3>
@@ -574,24 +711,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">ERPNext</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="90"></div>
-              </div><span class="skill-pct">90%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Frappe</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="88"></div>
-              </div><span class="skill-pct">88%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Custom Apps</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="85"></div>
-              </div><span class="skill-pct">85%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Workflows</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet)" data-w="82"></div>
-              </div><span class="skill-pct">82%</span>
             </div>
           </div>
         </div>
@@ -603,24 +728,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">OpenAI API</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="85"></div>
-              </div><span class="skill-pct">85%</span>
             </div>
             <div class="skill-row"><span class="skill-name">MCP Protocol</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="80"></div>
-              </div><span class="skill-pct">80%</span>
             </div>
             <div class="skill-row"><span class="skill-name">RAG Systems</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="75"></div>
-              </div><span class="skill-pct">75%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Prompt Eng.</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="82"></div>
-              </div><span class="skill-pct">82%</span>
             </div>
           </div>
         </div>
@@ -632,24 +745,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">AWS</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="78"></div>
-              </div><span class="skill-pct">78%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Docker</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="75"></div>
-              </div><span class="skill-pct">75%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Lambda</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="80"></div>
-              </div><span class="skill-pct">80%</span>
             </div>
             <div class="skill-row"><span class="skill-name">CloudWatch</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="72"></div>
-              </div><span class="skill-pct">72%</span>
             </div>
           </div>
         </div>
@@ -661,24 +762,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">Python</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="88"></div>
-              </div><span class="skill-pct">88%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Node.js</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="78"></div>
-              </div><span class="skill-pct">78%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Laravel</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="72"></div>
-              </div><span class="skill-pct">72%</span>
             </div>
             <div class="skill-row"><span class="skill-name">REST APIs</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--violet-l)" data-w="85"></div>
-              </div><span class="skill-pct">85%</span>
             </div>
           </div>
         </div>
@@ -690,24 +779,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">React</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="78"></div>
-              </div><span class="skill-pct">78%</span>
             </div>
             <div class="skill-row"><span class="skill-name">JavaScript</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="82"></div>
-              </div><span class="skill-pct">82%</span>
             </div>
             <div class="skill-row"><span class="skill-name">HTML/CSS</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="85"></div>
-              </div><span class="skill-pct">85%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Jinja</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--amber)" data-w="80"></div>
-              </div><span class="skill-pct">80%</span>
             </div>
           </div>
         </div>
@@ -719,24 +796,12 @@
           </div>
           <div class="skill-items">
             <div class="skill-row"><span class="skill-name">MySQL</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="85"></div>
-              </div><span class="skill-pct">85%</span>
             </div>
             <div class="skill-row"><span class="skill-name">MariaDB</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="82"></div>
-              </div><span class="skill-pct">82%</span>
             </div>
             <div class="skill-row"><span class="skill-name">PostgreSQL</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="70"></div>
-              </div><span class="skill-pct">70%</span>
             </div>
             <div class="skill-row"><span class="skill-name">Redis</span>
-              <div class="skill-bar-bg">
-                <div class="skill-bar" style="width:0;background:var(--emerald)" data-w="65"></div>
-              </div><span class="skill-pct">65%</span>
             </div>
           </div>
         </div>
@@ -936,20 +1001,11 @@
           <div class="tl-year">2024</div>
           <div class="tl-role">Junior Software Developer</div>
           <div class="tl-company">Keepsake Automation · Ahmedabad</div>
-          <div class="tl-desc">Created welding data management platform —
-            architecture, AWS setup, React frontend, and production deployment,Began AWS integration work with S3,
-            Lambda, and CloudWatch.
-            Then started the employee assessment portal and shipped the first wave of manufacturing workflow
-            automations.
-            Went deep on Frappe — complex workflow automation across four
-            departments, portal development. Simultaneously started exploring the MCP protocol and built the first
-            proof-of-concept AI assistant for ERPNext.
-            Leading the AI integration work. The MCP server is in production and used daily.
-            Currently expanding tool coverage to 120+ categories, hardening intent classification, and exploring RAG
-            for unstructured business documents. Also open to new roles in AI-integrated ERP or agentic AI systems.
-          </div>
+          <div class="tl-desc">Created welding data management platform including architecture, AWS setup, React
+            frontend, and production deployment. Delivered the employee assessment portal and shipped initial
+            manufacturing workflow automations.</div>
         </div>
-        <!-- <div class="tl-item">
+        <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="tl-year">2024 – 2025</div>
           <div class="tl-role">ERPNext Developer & AI Systems</div>
@@ -965,10 +1021,87 @@
           <div class="tl-desc">Leading AI integration initiatives — MCP servers, agentic workflows, RAG systems.
             Maintaining cloud infrastructure on AWS. Actively consulting on ERPNext implementations and AI-powered ERP
             solutions.</div>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- BLOG / WRITING -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <span class="section-eye">Thoughts & Writing</span>
+      <h2 class="section-title fade-in">Technical Articles</h2>
+      <p class="section-sub fade-in">Deep dives into the technology I build with — from ERP architecture to agentic AI
+        systems.</p>
+      <div class="blog-grid">
+
+        <article class="blog-card fade-in" data-slug="mcp-chatbot">
+          <div class="blog-card-header">
+            <span class="blog-tag">AI · MCP · ERPNext</span>
+            <span class="blog-read"><i class="fa fa-clock"></i> 7 min read</span>
+          </div>
+          <h3 class="blog-title">How I Built an AI Chatbot for ERPNext Using the Model Context Protocol</h3>
+          <p class="blog-excerpt">Most AI integrations bolt a chat widget on top of a system and call it done. I took a
+            different approach — using MCP to give an LLM structured, permission-aware access to live ERPNext data.
+            Here's the full architecture, the trade-offs, and what I'd do differently.</p>
+          <div class="blog-footer">
+            <div class="blog-meta"><i class="fa fa-calendar"></i> June 2025</div>
+            <div class="blog-topics">
+              <span>Python</span><span>MCP</span><span>OpenAI</span><span>Frappe</span>
+            </div>
+          </div>
+          <div class="blog-read-more"><i class="fa fa-book-open"></i> Read full article</div>
+        </article>
+
+        <article class="blog-card fade-in" data-slug="weld-iot">
+          <div class="blog-card-header">
+            <span class="blog-tag">Industrial · IoT · AWS</span>
+            <span class="blog-read"><i class="fa fa-clock"></i> 5 min read</span>
+          </div>
+          <h3 class="blog-title">Factory Floor to Cloud: Designing Real-Time IoT Data Pipelines for Manufacturing</h3>
+          <p class="blog-excerpt">When KUKA welding robots generate thousands of data points per shift, you need a
+            pipeline that can ingest, normalise, and surface that data in real time — without losing a single weld
+            event. A walkthrough of our FTP → Lambda → S3 → MySQL → React stack.</p>
+          <div class="blog-footer">
+            <div class="blog-meta"><i class="fa fa-calendar"></i> May 2025</div>
+            <div class="blog-topics">
+              <span>AWS Lambda</span><span>S3</span><span>React</span><span>IoT</span>
+            </div>
+          </div>
+          <div class="blog-read-more"><i class="fa fa-book-open"></i> Read full article</div>
+        </article>
+
+        <article class="blog-card fade-in" data-slug="erp-architecture">
+          <div class="blog-card-header">
+            <span class="blog-tag">ERPNext · Frappe · Architecture</span>
+            <span class="blog-read"><i class="fa fa-clock"></i> 6 min read</span>
+          </div>
+          <h3 class="blog-title">Why ERPNext Custom Apps Beat Monkey-Patching: An Upgrade-Safe Approach</h3>
+          <p class="blog-excerpt">After deploying 8+ custom modules to production, I've learned one hard rule: never
+            touch ERPNext core. Here's how building proper Frappe apps with DocTypes, server scripts, and hook-based
+            overrides keeps you upgrade-safe while delivering 100% of the functionality clients need.</p>
+          <div class="blog-footer">
+            <div class="blog-meta"><i class="fa fa-calendar"></i> April 2025</div>
+            <div class="blog-topics">
+              <span>ERPNext</span><span>Frappe</span><span>Python</span><span>Architecture</span>
+            </div>
+          </div>
+          <div class="blog-read-more"><i class="fa fa-book-open"></i> Read full article</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG ARTICLE MODAL -->
+  <div class="blog-modal" id="blog-modal" role="dialog" aria-modal="true" aria-labelledby="blog-modal-heading"
+    aria-hidden="true">
+    <div class="blog-modal-box">
+      <button class="blog-modal-close" id="blog-modal-close" aria-label="Close article"><i
+          class="fa fa-times"></i></button>
+      <div class="blog-modal-scroll" id="blog-modal-body"></div>
+    </div>
+  </div>
 
   <!-- WHY HIRE -->
   <section class="why" id="why">
@@ -1031,13 +1164,14 @@
             scratch, a manufacturer looking to add AI to your floor data, or a company wanting to build intelligent
             workflows — I'd love to hear about it.</p>
           <div class="contact-links">
-            <a href="mailto:ayush@example.com" class="contact-link"><i class="fa fa-envelope"></i>
+            <a href="mailto:kunalayush30@gmail.com" class="contact-link"><i class="fa fa-envelope"></i>
               kunalayush30@gmail.com</a>
-            <a href="https://linkedin.com/in/ayush-kumar-07669930b" target="_blank" class="contact-link"><i
-                class="fab fa-linkedin"></i>linkedin.com/in/ayush-kumar-07669930b</a>
-            <a href="https://github.com/ayushkr300" target="_blank" class="contact-link"><i class="fab fa-github"></i>
+            <a href="https://linkedin.com/in/ayush-kumar-07669930b" target="_blank" rel="noopener noreferrer"
+              class="contact-link"><i class="fab fa-linkedin"></i>linkedin.com/in/ayush-kumar-07669930b</a>
+            <a href="https://github.com/ayushkr300" target="_blank" rel="noopener noreferrer" class="contact-link"><i
+                class="fab fa-github"></i>
               github.com/ayushkr300</a>
-            <a href="https://calendly.com/ayushkumar" target="_blank" class="contact-link"><i
+            <a href="https://calendly.com/ayushkumar" target="_blank" rel="noopener noreferrer" class="contact-link"><i
                 class="fa fa-calendar-check"></i> Schedule a call on Calendly</a>
           </div>
         </div>
@@ -1073,13 +1207,13 @@
           <form id="contact-form" novalidate>
             <div class="form-row">
               <label for="cf-name">Name</label>
-              <input type="text" id="cf-name" placeholder="Your name" required />
-              <span class="form-error" id="err-name">Please enter your name.</span>
+              <input type="text" id="cf-name" placeholder="Your name" aria-describedby="err-name" required />
+              <span class="form-error" id="err-name" role="alert">Please enter your name.</span>
             </div>
             <div class="form-row">
               <label for="cf-email">Email</label>
-              <input type="email" id="cf-email" placeholder="you@company.com" required />
-              <span class="form-error" id="err-email">Please enter a valid email address.</span>
+              <input type="email" id="cf-email" placeholder="you@company.com" aria-describedby="err-email" required />
+              <span class="form-error" id="err-email" role="alert">Please enter a valid email address.</span>
             </div>
             <div class="form-row">
               <label for="cf-type">Enquiry Type</label>
@@ -1095,8 +1229,9 @@
             </div>
             <div class="form-row">
               <label for="cf-msg">Message</label>
-              <textarea id="cf-msg" placeholder="Tell me about your project..." required></textarea>
-              <span class="form-error" id="err-msg">Please write a message.</span>
+              <textarea id="cf-msg" placeholder="Tell me about your project..." aria-describedby="err-msg"
+                required></textarea>
+              <span class="form-error" id="err-msg" role="alert">Please write a message.</span>
             </div>
             <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
               <i class="fa fa-paper-plane"></i> Send Message
@@ -1117,12 +1252,53 @@
         <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-copy">© 2025 Ayush Kumar · Built with intent</div>
+      <div class="footer-social" style="display:flex; gap:1rem; font-size:1.2rem; margin: 1rem 0;">
+        <a href="https://github.com/ayushkr300" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/ayush-kumar-07669930b" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:kunalayush30@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+      </div>
+      <div class="footer-copy">© <span id="current-year">2025</span> Ayush Kumar · Built with HTML, CSS & JS <i
+          class="fa fa-heart" style="color: #e25555; font-size: 0.8rem; margin-left: 2px;"></i></div>
     </div>
   </footer>
 
   <!-- BACK TO TOP -->
   <button id="back-top" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+  <!-- CHATBOT DEMO WIDGET -->
+  <button id="chatbot-fab" class="chatbot-fab" aria-label="Open AI Chatbot Demo">
+    <img src="images/icon.png" alt="AI" class="chatbot-fab-img" />
+    <span class="chatbot-fab-pulse"></span>
+  </button>
+  <div id="chatbot-widget" class="chatbot-widget">
+    <div class="chatbot-header" id="chatbot-header">
+      <div class="chatbot-title">
+        <img src="images/icon.png" alt="AI" style="width:28px;height:28px;border-radius:50%;" /> ERP AI Assistant
+      </div>
+      <button class="chatbot-close" id="chatbot-close-btn" aria-label="Close chatbot"><i
+          class="fa fa-times"></i></button>
+    </div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-msg ai">Hi! I'm the ERP AI Assistant. Try asking me something below 👇</div>
+      <div class="chat-suggestions" id="chat-suggestions">
+        <button class="chat-sugg-btn" data-query="Show me all open POs this month">📦 Open POs this month?</button>
+        <button class="chat-sugg-btn" data-query="What is the current stock level for Item A?">📊 Stock level?</button>
+        <button class="chat-sugg-btn" data-query="List overdue Sales Invoices above 1 Lakh">💰 Overdue
+          invoices?</button>
+        <button class="chat-sugg-btn" data-query="Show employee leave balance for this quarter">🏖️ Leave
+          balance?</button>
+        <button class="chat-sugg-btn" data-query="What are the top 5 selling items this year?">🏆 Top sellers?</button>
+        <button class="chat-sugg-btn" data-query="Create a new ToDo for follow-up with client">📝 Create a
+          ToDo?</button>
+      </div>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="chat-input-box" placeholder="Ask a question..." disabled />
+      <button id="chat-send-btn" disabled><i class="fa fa-paper-plane"></i></button>
+    </div>
+  </div>
 
   <!-- COMMAND PALETTE -->
   <div class="cmd-overlay" id="cmd-overlay">
